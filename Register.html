@@ -1,11 +1,11 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-hr" and dir="ltr">
 <head>
 <meta charset="utf-8">
 <title>Login page</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="Style.css" type="text/css">
+<link rel="stylesheet" href="style.css" type="text/css">
 
 <script src="https://kit.fontawesome.com/f091d61524.js" crossorigin="anonymous"></script>
 <link rel="shortcut icon" type="image/png" href="Icons/login.png">
@@ -14,18 +14,22 @@
 
 <div class="register">
 
-    <form method="POST" autocomplete="on" id="login_form" name="login_form" action="Register.php">
-        <label for="username">Username</label><br>
+    <form method="POST" autocomplete="on" id="register_form" name="register_form" action="Register.php">
+
+        <label for="username"><b>Username</b></label><br>
         <input type="text" placeholder="Enter username" id="username" name="username" required><br>
 
-        <label for="password">Password</label><br>
+        <label for="email"><b>Email</b></label><br>
+        <input type="text" placeholder="Enter e-mail" name="email" id='email' pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,3}$" required><br>
+
+
+        <label for="password"><b>Password</b></label><br>
         <input type="password" placeholder="Enter password" id="password" name="password" required><br>
 
-        <input type="checkbox" id="remember" name="remember" checked>
-        <label for="remeber">Remeber me</label><br>
+        <label for="password_repeat"><b>Repeat Password</b></label><br>
+        <input type="password" placeholder="Repeat password" id="password_r" name="password_r" required><br>
 
-        <button type="submit" id="sbmt" value="Login">Login</button><br>
-        <p>Don't have an account?</p>
+        <button type="submit" id="submit" value="Register">Sign up</button><br>
 
     </form>
 </div>

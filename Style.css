@@ -3,8 +3,14 @@
 }
 
 
-body{
-    background-color: lightgray;
+.Login-page{
+    background: #F8F5F5;
+    background-repeat:no-repeat;
+    background-size:contain;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
 }
 
 
@@ -20,8 +26,7 @@ body{
 }
 
 .zlatnirat{
-    padding-top: 45%;
-    position: relative;
+    width: max-content;
 }
 /* 
 .register{

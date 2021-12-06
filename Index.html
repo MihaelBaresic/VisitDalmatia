@@ -11,31 +11,30 @@
 <link rel="shortcut icon" type="image/png" href="Icons/login.png">
 
 <body>
+    <div class="Login-page">
+        <div class="zlatnirat">
+            <img src="Pictures/bol.png">
+        </div>
 
+        
+        <div class="login">
 
+            <form method="POST" autocomplete="on" id="login_form" name="login_form" action="Login.php">
+                <label for="username">Username</label><br>
+                <input type="text" placeholder="Enter username" id="usern" name="usern" required><br>
 
-<div class="zlatnirat">
-    <img src="Pictures/bol.png" alt="Zlatni Rat">
-</div>
+                <label for="password">Password</label><br>
+                <input type="password" placeholder="Enter password" id="passw" name="passw" required><br>
 
-<div class="login">
+                <input type="checkbox" id="remember" name="remember" checked>
+                <label for="remeber">Remeber me</label><br>
 
-    <form method="POST" autocomplete="on" id="login_form" name="login_form" action="Login.php">
-        <label for="username">Username</label><br>
-        <input type="text" placeholder="Enter username" id="usern" name="usern" required><br>
+                <button type="submit" id="sbmt" value="Login">Login</button><br>
+                <p>Don't have an account?</p>
 
-        <label for="password">Password</label><br>
-        <input type="password" placeholder="Enter password" id="passw" name="passw" required><br>
-
-        <input type="checkbox" id="remember" name="remember" checked>
-        <label for="remeber">Remeber me</label><br>
-
-        <button type="submit" id="sbmt" value="Login">Login</button><br>
-        <p>Don't have an account?</p>
-
-    </form>
-</div>
-
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>

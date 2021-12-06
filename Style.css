@@ -9,24 +9,40 @@
     background-size:contain;
     height: 100vh;
     display:flex;
+    flex-direction: row;
     align-items: center;
     justify-content:space-between;
+    box-shadow: 15px 4px 45px rgba(0, 0, 0, 0.25);
 }
 
 
 .login{
     background-color: yellow;
-    margin: 20% auto 5% auto; 
-    padding: 20px;
+    
+    margin: 0; 
+
+
+    
+
+    padding: 266px 120px;
+    
     text-align: center;
-    top: 60%;
-    right: 65%;
-    width: 20%;
-    height: 20vh;
+    
+    right: 0;
+    height: 100vh;
+    
 }
 
 .zlatnirat{
-    width: max-content;
+    
+margin: 0;
+    
+   height: 100vh;
+   
+    
+    /*
+    height: 50% ;
+    */
 }
 /* 
 .register{

@@ -16,13 +16,9 @@
    
 }
 
-
 .login{
     background-color: #F8F5F5;
-    margin: 0; 
-    padding: 266px 120px;
     text-align: center;
-    right: 0;
     display: grid;
     place-content: center;
     float: left;
@@ -67,5 +63,5 @@ button:hover {
 }
 
 p{
-    font-size: 1vw;
+    font-size: 2.2vh;
 }

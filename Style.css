@@ -5,13 +5,15 @@
 
 .Login-page{
     background: #F8F5F5;
-    height: 98vh;
     display:flex;
     flex-direction: row;
     align-items: center;
     justify-content:space-between;
-    box-shadow: 15px 4px 45px rgba(0, 0, 0, 0.25);
-    margin: 60px 0px 60px 80px;
+    box-shadow: 15px 4px 45px rgba(0, 0, 0, 0.6);
+    margin: 5% 0% 5% 7%;
+    width: 90%; 
+    height: 80vh;
+   
 }
 
 
@@ -21,6 +23,49 @@
     padding: 266px 120px;
     text-align: center;
     right: 0;
-    
+    display: grid;
+    place-content: center;
+    float: left;
+    width: 50%;
+    height: 100%;
 }
 
+.zlatnirat{
+    float: left;
+    width: 60%;
+    height: 100%;
+}
+
+body{
+    background-color: lightgray;
+}
+
+
+input[type=text], input[type=password] {
+    width: 100%;
+    height: 10%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin: 5px 0px;
+}
+
+button {
+    background-color: rgb(68, 68, 255);
+    color: white;
+    padding: 14px 20px;
+    margin: 16px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 25px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+p{
+    font-size: 1vw;
+}

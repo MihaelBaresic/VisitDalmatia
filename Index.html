@@ -11,26 +11,26 @@
 <link rel="shortcut icon" type="image/png" href="Icons/login.png">
 
 <body>
-    <div class="Login-page" style="width:100%;height:100%;">
-        <div class="zlatnirat" style="float:left;width:50%;height:100%; ">
-            <img src="Pictures/bol.png" width="100%" height="100%">
+    <div class="Login-page">
+        <div class="zlatnirat">
+            <img src="Pictures/bol.jpg" width="100%" height="100%" alt="Picture of beach">
         </div>
 
         
-        <div class="login" style="float:left;width:50%;height:100%;">
+        <div class="login">
 
-            <form method="POST" autocomplete="on" id="login_form" name="login_form" action="Login.php" >
-                <label for="username">Username</label><br>
+            <form method="POST" autocomplete="on" id="login_form" name="login_form" action="Login.php" style="width: 400px; height: 400px;">
+                <label for="username"><b>Username</b></label><br>
                 <input type="text" placeholder="Enter username" id="usern" name="usern" required><br>
 
-                <label for="password">Password</label><br>
+                <label for="password"><b>Password</b></label><br>
                 <input type="password" placeholder="Enter password" id="passw" name="passw" required><br>
 
                 <input type="checkbox" id="remember" name="remember" checked>
                 <label for="remeber">Remeber me</label><br>
 
                 <button type="submit" id="sbmt" value="Login">Login</button><br>
-                <p>Don't have an account?</p>
+                <p id="reg"><a href="register.html">Don't have an account?</a></p>
 
             </form>
         </div>

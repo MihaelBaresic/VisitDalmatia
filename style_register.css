@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+
+h2{
+    color:gray;
+    font-size: 13px;
+    margin: 0px 0px 5px 0px;
+}
+
+#linker{
+    color: blue;
+}
+
+body{
+    background-color: lightgray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+.Register-page{
+    background: #F8F5F5;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    box-shadow: 15px 4px 45px rgba(0, 0, 0, 0.6);
+    margin: 5% 0% 5% 7%;
+    width: 90%; 
+    height: 80vh;
+   
+}
+
+
+.register{
+    background-color: #F8F5F5;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding-bottom: 20px;
+}
+
+
+.brod{
+    
+        float: right;
+        width: 50%;
+        height: 100%;
+        margin: 0px; 
+    
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    height: 10%;
+    display: inline-block;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+    margin: 3px 0px;
+}
+
+button {
+    background-color: rgb(68, 68, 255);
+    color: white;
+    padding: 14px 20px;
+    margin: 16px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 25px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+

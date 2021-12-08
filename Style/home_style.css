@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto","sans-serif"; 
+    background-color: #F8F5F5;
+    background-image: url('Pictures/bg-page.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+/* Navigation */
+
+.nav-container{
+    height: 120px;
+}

@@ -138,3 +138,26 @@ h2 {
 }
 
 /* Karta */
+
+.mapdiv {
+    width: 100%;
+    height: 700px;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+.mapdiv svg {
+    background: #FFFAFA;
+    border: 20px solid #000000;
+}
+
+.mapdiv path {
+    fill:royalblue;
+    stroke: black;
+    stroke-width: 1px;
+    transition: fill 300ms;
+}
+
+.mapdiv :hover {
+    fill:yellow;
+}

@@ -161,3 +161,55 @@ h2 {
 .mapdiv :hover {
     fill:yellow;
 }
+
+#how {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #016B7F;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about-info {
+    width: 40%;
+}
+
+.about-info p {
+    margin-top: 20px;
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 52px;
+    color: #000000;
+    text-align:left ;
+}
+
+.about-image {
+    width: 60%;
+}
+
+.about-image img {
+    width: 100%;
+}
+
+#con {
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 52px;
+    color: #000000;
+    margin-bottom: 60px;
+}
+
+.social-icons {
+    margin-top: 40px;
+}

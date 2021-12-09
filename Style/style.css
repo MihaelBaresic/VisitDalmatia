@@ -2,23 +2,8 @@
     box-sizing: border-box;
 }
 
-h2{
-    color:gray;
-    font-size: 13px;
-    margin: 0px 0px 5px 0px;
-}
 
-#linker{
-    color: blue;
-}
-
-body{
-    background-color: lightgray;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 16px;
-}
-
-.Register-page{
+.Login-page{
     background: #F8F5F5;
     display:flex;
     flex-direction: row;
@@ -31,8 +16,7 @@ body{
    
 }
 
-
-.register{
+.login{
     background-color: #F8F5F5;
     text-align: center;
     display: grid;
@@ -40,26 +24,26 @@ body{
     float: left;
     width: 50%;
     height: 100%;
-    padding-bottom: 20px;
 }
 
-
-.brod{
-    
-        float: right;
-        width: 50%;
-        height: 100%;
-        margin: 0px; 
-    
+.zlatnirat{
+    float: left;
+    width: 60%;
+    height: 100%;
 }
+
+body{
+    background-color: lightgray;
+}
+
 
 input[type=text], input[type=password] {
     width: 100%;
     height: 10%;
     display: inline-block;
-    border: 2px solid #ccc;
+    border: 1px solid #ccc;
     box-sizing: border-box;
-    margin: 3px 0px;
+    margin: 5px 0px;
 }
 
 button {
@@ -78,4 +62,6 @@ button:hover {
     opacity: 0.8;
 }
 
-
+p{
+    font-size: 2.2vh;
+}

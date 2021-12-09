@@ -6,9 +6,6 @@
 body {
     font-family: "Roboto","sans-serif"; 
     background-color:  #F8F5F5 ;
-    background-repeat: no-repeat;
-    background-image: url("Pictures/bg-page.svg");
-    background-position: right;
     background-size: contain;
 }
 

@@ -5,8 +5,9 @@
 
 body {
     font-family: "Roboto","sans-serif"; 
-    background: #F8F5F5 url('Pictures/bg-page.svg');
+    background-color:  #F8F5F5 ;
     background-repeat: no-repeat;
+    background-image: url("Pictures/bg-page.svg");
     background-position: right;
     background-size: contain;
 }
@@ -15,7 +16,7 @@ body {
 
 .nav-container{
     height: 75px;
-    background-color: yellow;
+    background: #016a7f7c;
 }
 
 .wrapper {
@@ -28,6 +29,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     height: 75px;
+
 }
 
 nav ul {
@@ -48,7 +50,7 @@ nav .logo {
 
 .nav-items li:nth-last-of-type(1) {
     margin: 0;
-    background: #F8F5F5;
+    background: #F8F5F5 ;
     border-radius: 20px;
     padding: 12px 48px;
     display: inline-block;
@@ -58,6 +60,7 @@ nav .logo {
 .nav-items li:nth-last-of-type(1):hover {
    transform: translateY(-3px);
 }
+
 
 .nav-items li a {
     color: #000000;
@@ -152,14 +155,14 @@ h2 {
 }
 
 .mapdiv path {
-    fill:royalblue;
+    fill:#016B7F;
     stroke: black;
     stroke-width: 1px;
-    transition: fill 300ms;
+    transition: fill 1ms;
 }
 
 .mapdiv :hover {
-    fill:yellow;
+    fill:rgba(255, 255, 0, 0.733);
 }
 
 #how {
@@ -209,7 +212,29 @@ h2 {
     color: #000000;
     margin-bottom: 60px;
 }
+/* Social Icons */
 
 .social-icons {
     margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.social-icons a {
+    margin-right: 30px;
+}
+
+/* Footer */
+
+footer {
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0.5em;
+    text-align: center;
+    position:static;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }

@@ -5,8 +5,7 @@
 
 body {
     font-family: "Roboto","sans-serif"; 
-    background-color: #F8F5F5;
-    background-image: url('Pictures/bg-page.png');
+    background: #F8F5F5 url('Pictures/bg-page.svg');
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
@@ -15,5 +14,65 @@ body {
 /* Navigation */
 
 .nav-container{
-    height: 120px;
+    height: 75px;
+    background-color: yellow;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav .logo {
+    width: 302px;
+    height: 53px;
+}
+
+.nav-items li {
+    list-style: none;
+    margin-right: 100px;
+}
+
+.nav-items li:nth-last-of-type(1) {
+    margin: 0;
+}
+
+.nav-items li a {
+    color: #000000;
+    font-size: 24px;
+    font-family: "Poppins","sans-serif";
+    text-decoration: none;
+}
+
+/* Header */
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .intro-content {
+    
+}
+
+header .intro-image img {
+    
 }

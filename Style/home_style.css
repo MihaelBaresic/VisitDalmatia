@@ -32,6 +32,7 @@ nav {
 
 nav ul {
     display: flex;
+    flex-direction: row;
 }
 
 nav .logo {
@@ -42,10 +43,20 @@ nav .logo {
 .nav-items li {
     list-style: none;
     margin-right: 100px;
+    margin-top: 12px;
 }
 
 .nav-items li:nth-last-of-type(1) {
     margin: 0;
+    background: #F8F5F5;
+    border-radius: 20px;
+    padding: 12px 48px;
+    display: inline-block;
+    transition: 300ms;
+}
+
+.nav-items li:nth-last-of-type(1):hover {
+   transform: translateY(-3px);
 }
 
 .nav-items li a {
@@ -102,4 +113,30 @@ header .intro-image {
 
 header .intro-image img {
     width: 100%;
+}
+
+.explore {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+}
+
+.destination {
+    font-size: 24px;
+    line-height: 36px;
+    color: #016B7F;
+}
+
+h2 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 84px;
+    color: #000000;
+}
+
+.mapdiv {
+    
 }

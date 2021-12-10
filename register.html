@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="Style/style_register.css" type="text/css">
+<script src="Scripts/Functions.js"></script>
 
 <script src="https://kit.fontawesome.com/f091d61524.js" crossorigin="anonymous"></script>
 <link rel="shortcut icon" type="image/png" href="Icons/login.png">
@@ -20,23 +21,23 @@
     <form method="POST" autocomplete="on" id="register_form" name="register_form" action="register.php" style="width: 400px; height: 400px;">
      
         <label for="username"><b>Username</b></label><br>
-        <input type="text" placeholder="Enter username" id="username" name="username" required><br>
+        <input type="text" placeholder="Enter username" id="username" name="username" onchange="Lgth();" required><br>
 
         <label for="email"><b>Email</b></label><br>
         <input type="text" placeholder="Enter e-mail" name="email" id='email' pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,3}$" required><br>
 
 
         <label for="password"><b>Password</b></label><br>
-        <input type="password" placeholder="Enter password" id="password" name="password" required><br>
+        <input type="password" placeholder="Enter password" id="password" name="password" onchange="Confirm();" required><br>
 
         <label for="password_repeat"><b>Repeat Password</b></label><br>
-        <input type="password" placeholder="Repeat password" id="password_r" name="password_r" required><br>
+        <input type="password" placeholder="Repeat password" id="password_r" name="password_r" onchange="Confirm();" required><br>
 
         <button type="submit" id="submit" value="Register">SIGN UP</button><br>
 
         <h2>
             Already have account?
-            <a href="index.html" ><big id="linker">Login here</big></a>
+            <a href="index.php" ><big id="linker">Login here</big></a>
         </h2>
     
     </form>

@@ -24,7 +24,7 @@
                 <input type="text" placeholder="Enter username" id="usern" name="usern" required><br>
 
                 <label for="password"><b>Password</b></label><br>
-                <input type="password" placeholder="Enter password" id="passw" name="passw" required><br>
+                <input type="password" placeholder="Enter password" id="psw" name="psw" required><br>
 
                 <input type="checkbox" id="remember" name="remember" checked>
                 <label for="remeber">Remeber me</label><br>
@@ -38,3 +38,13 @@
 </body>
 
 </html>
+
+
+<?php
+
+if (isset($_GET['Message'])) {
+    print '<script type="text/javascript">alert("' . $_GET['Message'] . '");</script>';
+}
+
+?>
+

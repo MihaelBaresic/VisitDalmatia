@@ -33,7 +33,6 @@ if(mysqli_num_rows($result) > 0)
     {
         echo"<script type='text/javascript'>window.alert('Login success!');</script>";
         $_SESSION['username'] = $row['username'];
-        $_SESSION['name'] = $row['name'];
         $_SESSION['ID_k'] = $row['ID_k'];
         echo "<script>location.href = 'Home.php';</script>";
     }

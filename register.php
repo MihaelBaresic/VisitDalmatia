@@ -31,7 +31,7 @@ if($stmt = $con->prepare('SELECT ID_k, password FROM korisnici WHERE username = 
             $stmt->bind_param('sss', $_POST['username'], $password, $_POST['email']);
             $stmt->execute();
             echo"<script type='text/javascript'>window.alert('Succesfully registred, you can now log in.');</script>";
-            echo "<script>location.href = 'Index.html';</script>";
+            echo "<script>location.href = 'Index.php';</script>";
         } 
         else{
             echo 'Error occurred!';

@@ -1,54 +1,47 @@
 <!DOCTYPE html>
 <html lang="en-hr" and dir="ltr">
+
 <head>
-<meta charset="utf-8">
-<title>Sign up page</title>
+    <meta charset="utf-8">
+    <title>Create acount</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="Style/style_register.css" type="text/css">
-<script src="Scripts/Functions.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/signup.css">
 
-<script src="https://kit.fontawesome.com/f091d61524.js" crossorigin="anonymous"></script>
-<link rel="shortcut icon" type="image/png" href="Icons/login.png">
+    <script src="Scripts/Functions.js"></script>
+
+    <script src="https://kit.fontawesome.com/f091d61524.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/png" href="Icons/login.png">
+</head>
 
 <body>
 
-<div class="Register-page">
-  
+    <div id="login-box">
+        <div class="left">
+            <h1>Sign up</h1>
+            <p id="login">Already have account? <a href="index.php">Login here</a></p>
 
-<div class="register">
+            <form method="POST" autocomplete="on" id="register_form" name="register_form" action="register.php">
 
-    <form method="POST" autocomplete="on" id="register_form" name="register_form" action="register.php" style="width: 400px; height: 400px;">
-     
-        <label for="username"><b>Username</b></label><br>
-        <input type="text" placeholder="Enter username" id="username" name="username" onchange="Lgth();" required><br>
+                <input type="text" name="username" placeholder="Username" autocomplete="off" />
+                <input type="text" name="email" placeholder="E-mail" autocomplete="off"/>
+                <input type="password" name="password" placeholder="Password" autocomplete="off"/>
+                <input type="password" name="password2" placeholder="Retype password" autocomplete="off"/>
+        
+                <input type="submit" name="signup_submit" value="Sign me up" />
 
-        <label for="email"><b>Email</b></label><br>
-        <input type="text" placeholder="Enter e-mail" name="email" id='email' pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,3}$" required><br>
+            </form>
 
+        </div>
+        <div class="right" id ="gr">
+            <!--  <span class="loginwith">Sign in with<br />social network</span>
+      
+             <button class="social-signin facebook">Log in with facebook</button>
+              <button class="social-signin twitter">Log in with Twitter</button>
+              <button class="social-signin google">Log in with Google+</button>--> 
+          </div>
 
-        <label for="password"><b>Password</b></label><br>
-        <input type="password" placeholder="Enter password" id="password" name="password" onchange="Confirm();" required><br>
-
-        <label for="password_repeat"><b>Repeat Password</b></label><br>
-        <input type="password" placeholder="Repeat password" id="password_r" name="password_r" onchange="Confirm();" required><br>
-
-        <button type="submit" id="submit" value="Register">SIGN UP</button><br>
-
-        <h2>
-            Already have account?
-            <a href="index.php" ><big id="linker">Login here</big></a>
-        </h2>
-    
-    </form>
-
- </div>
-
-
-<div class="brod">
-    <img src="Pictures/hotg.jpg" width="100%" height="100%" alt="Picture of beach">
-</div>
-</div>
+    </div>
 </body>
 
 </html>

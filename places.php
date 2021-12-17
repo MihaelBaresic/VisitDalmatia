@@ -35,8 +35,7 @@
             </nav>
         </div>
     </div>
-</body>
-</html>
+
 
 
 <?php
@@ -100,4 +99,5 @@ $resultnew = mysqli_query($con, $sqlnew);
 ?>
 
 
-
+</body>
+</html>

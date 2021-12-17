@@ -1,7 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style/bookmarks_style.css">
+</head>
+<body>
+    <div class="nav-container">
+        <div class="wrapper">
+            <nav>
+                <div class="logo">
+                    <a href="Home.php"><img src="Icons/logo.png" alt="Logo"></a>
+                </div>
+                    <ul class="nav-items">
+                        <li>
+                            <a href="Home.php">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="bookmarks.html">Bookmarks</a>
+                        </li>
+
+                        <li>
+                            <a href="Home.php">Contacts</a>
+                        </li>
+
+                        <li>
+                            <a class="nav-btn-logout" href="logout.php">Logout</a>
+                        </li>
+
+                    </ul>
+            </nav>
+        </div>
+    </div>
+</body>
+</html>
+
+
 <?php
 
-#HELLO WORLD
 include "db.php";
+include "session.php";
 $county_name = $_GET['c_name'];
 
 
@@ -14,37 +55,31 @@ $result = mysqli_query($con, $sql);
     {
         echo"
 
-        <div class='container'>
-            <img src='$row[img_url]' style='width: 300px; heigth: 300px;'>
-            <div class='container-content'>
-                <h2>$row[naziv]</h2>
-                <span><a href=$row[hylink]>Google location</span>
-                <img src='Icons/bookmark.png' style='width: 30px; heigth: 30px;'>
-            </div>
+        <div class='container' style='
+        background-color:lightgray; 
+        float: left;
+        width: 320px; heigth: 450px; border-radius:30px; margin: 33px 66px;'>
 
+
+            <div class='container-content' style='padding: 0px;
+            text-align: center; '>
+
+            <img src='$row[img_url]' style='width: 100%;
+            height: 200px; border-radius:30px 30px 0px 0px;'>
+
+            <img src='Icons/bookmark.png' style='float:right; margin: 16px 16px 0 0; width: 30px; heigth: 30px;'>
+            <img src='Icons/location.png' style='float:left; margin: 16px 0 0 16px; width: 30px; heigth: 30px;'>
+            <h2>$row[naziv]</h2>
+
+            <p>For more information click <a href=$row[hylink] target='_blank'>here</a></p>
+
+            </div>
         </div>";
 
 
     }
 
-
-
-// Fatal error: Uncaught TypeError: mysqli_fetch_assoc(): Argument #1 ($result) must be of type mysqli_result, bool given in C:\xampp\htdocs\VisitDalmatia\places.php:12 Stack trace: #0 C:\xampp\htdocs\VisitDalmatia\places.php(12): 
-// mysqli_fetch_assoc(false) #1 {main} thrown in C:\xampp\htdocs\VisitDalmatia\places.php on line 12
-
-
 ?>
 
 
 
-
-
-
-<!-- 
-https://imotski.hr/wp-content/uploads/2020/01/imotski-2.jpg
-
-https://a.cdn-hotels.com/gdcs/production183/d1693/12dc5cda-c6c9-4beb-aa9f-084de8a28b51.jpg?impolicy=fcrop&w=800&h=533&q=medium
-
-https://image.dnevnik.hr/media/images/1600x1067/Jun2020/61905572-makarska-hrvatska.jpg
-
--->

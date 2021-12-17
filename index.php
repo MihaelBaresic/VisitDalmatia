@@ -26,7 +26,7 @@
             <h1>Login</h1>
             <span></span>
 
-            <form method="POST" autocomplete="off" id="login_form" name="login_form" action="login.php">
+            <form method="POST" autocomplete="on" id="login_form" name="login_form" action="login.php">
                 <input type="text" name="usern" placeholder="Username" required />
                 <input type="password" name="psw" placeholder="Password"  required />
                   

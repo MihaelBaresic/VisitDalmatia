@@ -1,10 +1,18 @@
 <?php
 session_start();
-include "Db.php";
+echo "hi;";
+if(isset($_POST['submit'])){
+    include_once "db.php";
+}
+else{
+    header("Location: index.php?signup=error");
+    exit();
+}
 
 //if database is connected or not
 if(mysqli_connect_error()){
-    exit('Error connecting to the database' . mysqli_connect_error());
+    header("Location: index.php?login=db_connect_error");
+    exit();
 }
 
 
@@ -17,6 +25,10 @@ if(isset($_POST['usern']) && isset($_POST['psw'])) {
         return $data;
     }
 }
+else{
+    header("Location: index.php?login=error");
+    exit();
+} 
 
 $usern = Validate($_POST['usern']);
 $pass = $_POST['psw'];
@@ -31,20 +43,19 @@ if(mysqli_num_rows($result) > 0)
     $row = mysqli_fetch_assoc($result);
     if(($row['username'] === $usern) && (password_verify($pass,$row['password'])))
     {
-        echo"<script type='text/javascript'>window.alert('Login success!');</script>";
         $_SESSION['username'] = $row['username'];
         $_SESSION['ID_k'] = $row['ID_k'];
         echo "<script>location.href = 'Home.php';</script>";
     }
     else
     {
-        echo "<script type='text/javascript'>window.alert('Inccorect password!')</script>";
-        echo "<script>location.href = 'index.php';</script>";
+        header("Location: index.php?signup=incorrect");
+        exit();
     }
 
 }
 else {
-    echo "<script type='text/javascript'>window.alert('Username does not exist!')</script>";
-    echo "<script>location.href = 'index.php';</script>";
+    header("Location: index.php?signup=incorrect");
+    exit();
 }
 ?>

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Style/bookmarks_style.css">
+    <script src="Scripts/Functions.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
     <div class="nav-container">
@@ -17,8 +19,7 @@
                     <ul class="nav-items">
                         <li>
                             <a href="Home.php">Home</a>
-                        </li>
-
+                        </li> 
                         <li>
                             <a href="bookmarks.html">Bookmarks</a>
                         </li>
@@ -63,9 +64,34 @@ $resultnew = mysqli_query($con, $sqlnew);
         <img src='$rownew[grb]' style='width: 10%;
             height: 200px; border-radius:30px 30px 0px 0px;'>
         ";
+      
+       
     }
 
 
+ 
+/*
+    echo"
+    <form id='myForm' method='POST'>
+                            <input type='text' id='random' name='random' 'placeholder='random'
+                                required />
+                            <input type='button' id='submitFormData' value='Submit''></button>
+                        </form>
+                        <br/>
+                        <div id='results'>
+
+                        <!-- All data will display here  -->
+                        </div>
+    
+    
+    ";
+   */ 
+
+
+
+    
+
+   
 
 
     while($row = mysqli_fetch_assoc($result)) 
@@ -84,7 +110,11 @@ $resultnew = mysqli_query($con, $sqlnew);
             <img src='$row[img_url]' style='width: 100%;
             height: 200px; border-radius:30px 30px 0px 0px;'>
 
-            <img src='Icons/bookmark.png' style='float:right; margin: 16px 16px 0 0; width: 30px; heigth: 30px;'>
+            <form id='myForm' method='POST'>
+            <input type='image' src='Icons/bookmark.png' id='$row[id_mj]' onclick='SubmitFormData($row[id_mj]);return false;' style='float:right; margin: 16px 16px 0 0; width: 30px; heigth: 30px;'>
+            </form>
+
+            
             <img src='Icons/location.png' style='float:left; margin: 16px 0 0 16px; width: 30px; heigth: 30px;'>
             <h2>$row[naziv]</h2>
 

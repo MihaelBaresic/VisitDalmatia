@@ -9,7 +9,9 @@ include "session.php";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
+    <script src="Scripts/Functions.js"></script>
     <link rel="stylesheet" href="Style/home_style.css">
+    <
 </head>
 <body>
     <div class="nav-container">
@@ -24,7 +26,7 @@ include "session.php";
                         </li>
 
                         <li>
-                            <a href="bookmarks.html">Bookmarks</a>
+                            <a href="bookmarks.html" onclick="test();">Bookmarks</a>
                         </li>
 
                         <li>

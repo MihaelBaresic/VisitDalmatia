@@ -30,3 +30,14 @@ function Lgth(){
     }
 
 }
+
+
+function SubmitFormData(img) {
+    var id = img;
+    
+    $.post("submit.php", { id: id },
+    function(data) {
+	 $('#results').html(data);
+	 $('#myForm')[0].reset();
+    });
+}

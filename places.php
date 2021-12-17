@@ -49,7 +49,25 @@ $county_name = $_GET['c_name'];
 
 $sql = "SELECT * FROM mjesto WHERE id_zup='$county_name' ORDER BY 'naziv'";
 
+$sqlnew = "SELECT * FROM zupanija WHERE naziv_zup='$county_name'";
+
 $result = mysqli_query($con, $sql);
+$resultnew = mysqli_query($con, $sqlnew);
+
+    if(mysqli_num_rows($resultnew)>0){
+        $rownew=mysqli_fetch_assoc($resultnew);
+
+        echo"
+        <div class='county'>
+        <h1>$rownew[naziv_zup]</h1>
+        <p>$rownew[tekst]<p>
+        <img src='$rownew[grb]' style='width: 10%;
+            height: 200px; border-radius:30px 30px 0px 0px;'>
+        ";
+    }
+
+
+
 
     while($row = mysqli_fetch_assoc($result)) 
     {
@@ -76,8 +94,8 @@ $result = mysqli_query($con, $sql);
             </div>
         </div>";
 
-
     }
+    
 
 ?>
 

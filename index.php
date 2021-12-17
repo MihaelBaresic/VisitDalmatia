@@ -36,13 +36,13 @@
                 <?php
                     $fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
-                    if(strpos($fullUrl, "signup=db_connect_error") == true){
+                    if(strpos($fullUrl, "login=db_connect_error") == true){
                         echo "<div class='error'>Could not connect with database!</div>";
                     }
-                    if(strpos($fullUrl, "signup=error") == true){
+                    if(strpos($fullUrl, "login=error") == true){
                         echo "<div class='error'>Error occurred!</div>";
                     }
-                    if(strpos($fullUrl, "incorrect") == true){
+                    if(strpos($fullUrl, "login=incorrect") == true){
                         echo "<div class='error'>Incorrect Username/Password</div>";
                     }
                 ?>

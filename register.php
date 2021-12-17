@@ -1,21 +1,20 @@
 <?php
-include "db.php";
+
+if(isset($_POST['submit'])){
+    include_once "db.php";
+}
+else{
+    header("Location: signup.php?signup=error");
+    exit();
+}
+
 
 //if database is connected or not
 if(mysqli_connect_error()){
-    exit('Error connecting to the database' . mysqli_connect_error());
+    header("Location: signup.php?signup=db_connect_error");
+    exit();
 }
 
-//to check if any var is empty or not
-
-if(!isset($_POST['username'], $_POST['password'], $_POST['password_r'], $_POST['email'])) {
-    exit('Empty Field(s)');
-}
-
-
-if(empty($_POST['username'] || empty($_POST['password'] || empty($_POST['password_r'] || empty($_POST['email']))))) {
-    exit('Values empty');
-}
 
 if($stmt = $con->prepare('SELECT ID_k, password FROM korisnici WHERE username = ?')) {
     $stmt->bind_param('s', $_POST['username']);
@@ -23,7 +22,8 @@ if($stmt = $con->prepare('SELECT ID_k, password FROM korisnici WHERE username = 
     $stmt->store_result();
 
     if($stmt->num_rows>0) {
-        echo 'Username already taken, try again.';
+        header("Location: signup.php?signup=userTaken");
+        exit();
     }
     else {
         if($stmt = $con->prepare('INSERT INTO korisnici (username, password, email) VALUES (?, ?, ?)' )) {
@@ -34,13 +34,15 @@ if($stmt = $con->prepare('SELECT ID_k, password FROM korisnici WHERE username = 
             echo "<script>location.href = 'Index.php';</script>";
         } 
         else{
-            echo 'Error occurred!';
+            header("Location: signup.php?signup=error");
+            exit();
         }
     }
     $stmt->close();
 }
 else{
-    echo'Error occured!';
+    header("Location: signup.php?signup=error");
+    exit();
 }
 $con->close();
 

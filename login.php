@@ -11,7 +11,7 @@ else{
 
 //if database is connected or not
 if(mysqli_connect_error()){
-    header("Location: index.php?login=error");
+    header("Location: index.php?login=db_connect_error");
     exit();
 }
 

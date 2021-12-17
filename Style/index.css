@@ -1,0 +1,164 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,700);
+*:focus {
+  outline: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: rgba(1, 106, 127, 0.253);
+    font-size: 16px;
+    color: #222;
+    font-family: 'Poppins';
+    font-weight: 300;
+  }
+
+  #login-box {
+    position: relative;
+    margin: 9% auto;
+    width: 900px;
+    height: 500px;
+    background: #FFF;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    overflow: hidden 
+  }
+
+  .left {
+    position: absolute;
+    margin: auto;
+    left: -5%;
+    top: -25%;
+    box-sizing: border-box;
+    width: 476px;
+    height: 686px;
+    background: url('../Pictures/login.jpg');
+    background-size: cover;
+    background-position: center;
+    transform: rotate(11deg);
+    border-radius: 0 2px 2px 0;
+    box-shadow: 0 0 12px 0;
+
+  }
+
+  .right{
+    position: absolute;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 25px 40px 0px 0px;
+    right: 0%;
+    width: 500px;
+    height: 500px;
+  }
+
+  #logo > img{
+    width: 150px;
+    size: 35px;
+    padding: 0 0 0 63%;
+}
+
+h1 {
+  
+  margin: 0;
+  margin-top: 5%;
+  margin-left: 29%;
+  size: 50px;
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 700;
+  padding-left: 20%;
+}
+
+span{
+  display: block;
+  width: 12%;
+  height: 1px;
+  background-color: rgba(3, 92, 114, 1);
+
+  margin-left: 53%;
+}
+p{
+    font-family: 'Poppins';
+    size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 36px;
+    margin-left: 11%;
+
+}
+a{
+    color: rgba(1, 107, 127, 1);
+    font-weight: bold;
+    
+}
+a:link {text-decoration: none;}
+a:visited{text-decoration: none;}
+
+form#login_form {
+  margin-left: 14%;
+  margin-top: 15%;
+}
+
+input[type="text"],
+input[type="password"] {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  margin-left: 11%;
+  padding: 4px;
+  width: 320px;
+  height: 32px;
+  border: none;
+  color: rgba(1, 107, 127, 1);
+  border-bottom: 1px solid #AAA;
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.08s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-bottom: 2px solid rgba(1, 107, 127, 1);
+  color: rgb(41, 104, 139);
+  transition: 0.1s ease;
+}
+
+input[type="submit"] {
+  margin-top: 5%;
+  margin-left: 23%;
+  width: 220px;
+  height: 32px;
+  background: rgba(1, 107, 127, 1);
+  border: none;
+  border-radius: 100px;
+  color: #FFF;
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: bold;
+  font-size: 90%;
+  text-transform: uppercase;
+  transition: 0.1s ease;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  opacity: 0.8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+input[type="submit"]:active {
+  opacity: 1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+.error{
+  font-family: 'Poppins';
+  font-weight: 600;
+  color: rgb(255, 0, 0);
+  margin-left: 11%;
+}

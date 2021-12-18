@@ -68,15 +68,15 @@
 
                         echo"
                         <header>
-                            <div class="intro-content">
+                            <div class='intro-content'>
                                 <p>
                                     TOP DESTINATIONS
                                  </p>
                             <h1>$rownew[naziv_zup]</h1>
                             <p>$rownew[tekst]<p>
                             </div>
-                        <div class="intro-image">
-                            <img src="$rownew[grb]" alt="grb">
+                        <div class='intro-image'>
+                            <img src='$rownew[grb]' alt='grb'>
                         </div>
                         </header>
                         <h2>

@@ -11,7 +11,6 @@ include "session.php";
     <title>Home page</title>
     <script src="Scripts/Functions.js"></script>
     <link rel="stylesheet" href="Style/home_style.css">
-    <
 </head>
 <body>
     <div class="nav-container">

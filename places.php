@@ -33,7 +33,7 @@
                         </li>
 
                         <li>
-                            <a class="nav-btn-container" href="#">
+                            <a class="nav-btn-container" href="#" >
                                 <img class="search-btn" src="Icons/search-icon.svg" alt="">
                                 <img class="close-btn" src="Icons/close-icon.svg" alt="">
                             </a>
@@ -69,7 +69,7 @@
                         echo"
                         <header>
                             <div class='intro-content'>
-                                <p>
+                                <p class='top'>
                                     TOP DESTINATIONS
                                  </p>
                             <h1>$rownew[naziv_zup]</h1>
@@ -79,7 +79,7 @@
                             <img src='$rownew[grb]' alt='grb'>
                         </div>
                         </header>
-                        <h2>
+                        <h2 class='exp'>
                             Explore Top Destination
                         </h2>
                         ";
@@ -107,7 +107,6 @@
                     while($row = mysqli_fetch_assoc($result)) 
                     {
                         echo"
-
                         <div class='container' style='
                         background-color:lightgray; 
                         float: left;
@@ -132,14 +131,12 @@
 
                             </div>
                         </div>";
-
                     }
-                    
-
+                
                 ?>
             
 
-            <a href="#"><img src="Icons/logo.png" alt="Logo"></a>
+            <a class="Logo_d"href="#"><img src="Icons/logo.png" alt="Logo"></a>
 
             <div class="social-icons">
                 <a href="#"><img src="Icons/facebook-logo.png" alt="Facebook"></a>
@@ -149,5 +146,6 @@
         </div>   
     </div>
     <footer>©VISIT DALMATIA All Rights Reserved</footer>
+    <script src="search_bar.js"></script>
 </body>
 </html>

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Style/places_style.css">
+    <script src="Scripts/searchbar.js"></script>
     <script src="Scripts/Functions.js"></script>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>

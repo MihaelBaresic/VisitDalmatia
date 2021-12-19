@@ -147,6 +147,5 @@
         </div>   
     </div>
     <footer>©VISIT DALMATIA All Rights Reserved</footer>
-    <script src="search_bar.js"></script>
 </body>
 </html>

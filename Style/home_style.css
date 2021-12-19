@@ -220,6 +220,10 @@ h2 {
     margin-right: 30px;
 }
 
+.social-icons img:hover{
+    transform: translateY(-5px);
+}
+
 /* Footer */
 
 footer {

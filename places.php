@@ -42,7 +42,7 @@
             </nav>
         </div>
             <div class="logout">
-                <a class="nav-btn-logout" href="#">Logout</a>
+                <a class="nav-btn-logout" href="logout.php">Logout</a>
             </div>
     </div>
 

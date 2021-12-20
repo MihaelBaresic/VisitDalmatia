@@ -1,18 +1,11 @@
 <?php
-  echo $_POST['id'] ."<br />";
-
-  echo "==============================<br />";
-  echo "All Data Submitted Successfully!";
-  
-
- 
     include "db.php";
+    include "session.php";
 
-
-    $sql = "UPDATE korisnici SET random = '$_POST[id]' WHERE korisnici.ID_k = 4";
-
-    //UPDATE `korisnici` SET `random` = 'A' WHERE `korisnici`.`ID_k` = 4
-
+    if ($_POST["klasa"] == "far" )
+        $sql = "INSERT INTO bookmarks(id_korisnika, id_mjesta) VALUES ($_SESSION[ID_k],$_POST[id])";
+    else
+      $sql = "DELETE FROM bookmarks WHERE bookmarks.id_korisnika = $_SESSION[ID_k] AND bookmarks.id_mjesta=$_POST[id]";
     $con->query($sql);
   
 ?>

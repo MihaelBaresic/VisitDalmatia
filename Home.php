@@ -25,7 +25,7 @@ include "session.php";
                         </li>
 
                         <li>
-                            <a href="bookmarks.html" onclick="test();">Bookmarks</a>
+                            <a href="bookmarks.php">Bookmarks</a>
                         </li>
 
                         <li>

@@ -31,13 +31,22 @@ function Lgth(){
 
 }
 
-
-function SubmitFormData(img) {
+function SubmitFormData(img, el) {
     var id = img;
+    var klasa = el.className;
+   
+
+    if(klasa.includes("far")){
+        klasa = "far";
+    }
+    else{
+        klasa = "fas";
+    }
     
-    $.post("submit.php", { id: id },
+    $.post("submit.php", { id: id, klasa: klasa },
     function(data) {
 	 $('#results').html(data);
 	 $('#myForm')[0].reset();
     });
 }
+

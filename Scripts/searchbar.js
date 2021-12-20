@@ -28,3 +28,26 @@ document.querySelector("#search-box").addEventListener("keyup", (e) => {
         }
     }
 });
+
+
+let BookmarkIcons = document.querySelectorAll(".container-content .bm-icon");
+for(let i = 0; i < BookmarkIcons.length; i++){
+    let BookmarkIcon = BookmarkIcons[i];
+    //b) Za svaki bookmark registiraj funkciju koja će se pokrenuti na klik
+    BookmarkIcon.addEventListener("click", handleBookmarkIconClick);
+}
+
+function handleBookmarkIconClick(e){
+    //c) Promini klase  za efekt punog/praznog srca
+    let BookmarkIcon = e.currentTarget; //Bookmark na koje smo sad klikli
+    if(BookmarkIcon.classList.contains("far")){ //"prazni" bookmark 
+        BookmarkIcon.classList.remove("far");
+        BookmarkIcon.classList.add("fas");
+    }
+    else {
+        BookmarkIcon.classList.remove("fas");
+        BookmarkIcon.classList.add("far");
+    }
+}
+
+

@@ -65,3 +65,11 @@ nav .logo {
     font-family: "Poppins","sans-serif";
     text-decoration: none;
 }
+header h1 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 144px;
+    color: #000000;
+}

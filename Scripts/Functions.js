@@ -34,7 +34,6 @@ function Lgth(){
 function SubmitFormData(img, el) {
     var id = img;
     var klasa = el.className;
-   
 
     if(klasa.includes("far")){
         klasa = "far";
@@ -42,11 +41,14 @@ function SubmitFormData(img, el) {
     else{
         klasa = "fas";
     }
-    
+
     $.post("submit.php", { id: id, klasa: klasa },
     function(data) {
 	 $('#results').html(data);
 	 $('#myForm')[0].reset();
     });
+    
 }
+
+
 

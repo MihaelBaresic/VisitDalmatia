@@ -10,7 +10,7 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
-    <div class="search-box">    
+    <div class="search-box" id="search-box">    
         <input type="text" placeholder="Search here..." />
     </div>
 
@@ -26,10 +26,6 @@
                         </li> 
                         <li>
                             <a href="bookmarks.html">Bookmarks</a>
-                        </li>
-
-                        <li>
-                            <a href="Home.php">Contacts</a>
                         </li>
 
                         <li>
@@ -72,7 +68,7 @@
                                 <p class='top'>
                                     TOP DESTINATIONS
                                  </p>
-                            <h1>$rownew[naziv_zup]</h1>
+                            <h1>$rownew[naziv_zup] County</h1>
                             <p>$rownew[tekst]<p>
                             </div>
                         <div class='intro-image'>
@@ -110,7 +106,7 @@
                         <div class='container' style='
                         background-color:lightgray; 
                         float: left;
-                        width: 320px; heigth: 450px; border-radius:30px; margin: 33px 66px;'>
+                        width: 320px; heigth: 450px; border-radius:30px; margin: 33px 36px;'>
 
 
                             <div class='container-content' style='padding: 0px;
@@ -125,7 +121,7 @@
 
                             
                             <img src='Icons/location.png' style='float:left; margin: 16px 0 0 16px; width: 30px; heigth: 30px;'>
-                            <h2>$row[naziv]</h2>
+                            <h2 class='card-title-label'>$row[naziv]</h2>
 
                             <p>For more information click <a href=$row[hylink] target='_blank'>here</a></p>
 

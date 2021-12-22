@@ -55,7 +55,7 @@
             <?php
                 include "db.php";
                 include "session.php";
-                $sql = "SELECT mjesto.Naziv, mjesto.id_zup, mjesto.hylink, mjesto.id_mj FROM mjesto INNER JOIN bookmarks ON mjesto.id_mj=bookmarks.id_mjesta AND bookmarks.id_korisnika=$_SESSION[ID_k];";
+                $sql = "SELECT mjesto.Naziv, mjesto.id_zup, mjesto.hylink, mjesto.id_mj FROM mjesto INNER JOIN bookmarks ON mjesto.id_mj=bookmarks.id_mjesta AND bookmarks.id_korisnika=$_SESSION[ID_k] ORDER BY mjesto.Naziv";
                 $counter=1;
                 $result = mysqli_query($con, $sql);
 

@@ -126,14 +126,14 @@
                         <div class='container' style='
                         background-color:lightgray; 
                         float: left;
-                        width: 320px; heigth: 450px; border-radius:30px; margin: 33px 36px;'>
+                        width: 320px; heigth: 550px; border-radius:40px; margin: 33px 36px;'>
 
 
                             <div class='container-content' style='padding: 0px;
                             text-align: center; '>
 
                             <img src='$row[img_url]' style='width: 100%;
-                            height: 200px; border-radius:30px 30px 0px 0px;'>
+                            height: 300px; border-radius:30px 30px 0px 0px;'>
                             
                             <form id='myForm' method='POST'>
                             ";
@@ -166,13 +166,14 @@
                 
                 ?>
             
-
+            <div class="logoIkone">
             <a class="Logo_d"href="#"><img src="Icons/logo.png" alt="Logo"></a>
 
             <div class="social-icons">
                 <a href="#"><img src="Icons/facebook-logo.png" alt="Facebook"></a>
                 <a href="#"><img src="Icons/Instagram-logo.png" alt="Instagram"></a>
                 <a href="#"><img src="Icons/gmail-logo.png" alt="Gmail"></a>
+            </div>
             </div>
         </div>   
     </div>

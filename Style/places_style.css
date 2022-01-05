@@ -191,16 +191,16 @@ header p {
 }
 
 header .intro-content {
-    width: 60%;
+    width: 70%;
 }
 
 header .intro-image {
-    width: 40%;
+    width: 30%;
 }
 
 header .intro-image img {
     width: 100%;
-    max-height: 600px;
+    max-height:600px;
 }
 
 .exp {

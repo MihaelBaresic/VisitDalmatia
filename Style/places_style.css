@@ -257,3 +257,7 @@ footer {
     font-size: 30px;
     cursor: pointer;
 }
+
+.hidden {
+    display: none;
+}

@@ -13,14 +13,14 @@ closeBtn.addEventListener("click",() => {
     navBtnContainer.classList.remove("active");
 });
 
-document.querySelector("#search-box").addEventListener("keyup", (e) => {
+document.querySelector("#search").addEventListener("keyup", (e) => {
 
-    cardElement.querySelector(".card-title-label").textContent = title;
-    let query = e.currentTarget.value;
+    /*cardElement.querySelector(".card-title-label").textContent = title;*/
+    let query = e.currentTarget.value.toLowerCase();
 
     let cards = document.querySelectorAll(".container");
     for (let card of cards) {
-        if (card.textContent.indexOf(query) >= 0) {
+        if (card.textContent.toLowerCase().indexOf(query) >= 0) {
             card.classList.remove("hidden");
         }
         else {
@@ -49,5 +49,6 @@ function handleBookmarkIconClick(e){
         BookmarkIcon.classList.add("far");
     }
 }
+
 
 

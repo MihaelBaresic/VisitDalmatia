@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="search-box" id="search-box">    
-        <input type="text" placeholder="Search here..." />
+        <input type="text" id="search" placeholder="Search here..." />
     </div>
 
     <div class="nav-container">
@@ -98,6 +98,7 @@
                         <h2 class='exp'>
                             Explore Top Destination
                         </h2>
+                        <div class='cards'>
                         ";
                                       
                     }
@@ -166,7 +167,7 @@
                 
                 ?>
             
-
+                </div>
             <a class="Logo_d"href="#"><img src="Icons/logo.png" alt="Logo"></a>
 
             <div class="social-icons">

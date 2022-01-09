@@ -125,11 +125,11 @@
                         <div class='container' style='
                         background-color:lightgray; 
                         float: left;
-                        width: 320px; heigth: 450px; border-radius:30px; margin: 33px 36px;'>
+                        width: 320px; height: 300px; border-radius:30px; margin: 33px 40px;'>
                             <div class='container-content' style='padding: 0px;
                             text-align: center; '>
                             <img src='$row[img_url]' style='width: 100%;
-                            height: 200px; border-radius:30px 30px 0px 0px;'>
+                            height: 250px; border-radius:25px 25px 0px 0px;'>
                             
                             <form id='myForm' method='POST'>
                             ";

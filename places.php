@@ -91,7 +91,7 @@
                             <h1>$county_name</h1>
                             <p>$rownew[tekst]<p>
                             </div>
-                        <div class='intro-image'>
+                        <div class='intro-image' style='width:200px; height:200px; margin-bottom:50px;'>
                             <img src='$rownew[grb]' alt='grb'>
                         </div>
                         </header>

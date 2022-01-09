@@ -11,7 +11,61 @@ body {
 
 /* Navigation */
 
-.nav-container{
+.wrapper {
+    max-width: 1920px;
+    padding: 0 40px;
+    margin: auto;
+}
+
+.nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*z-index: 99;*/
+    background-color: #016a7f7c;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    height: 75px;
+}
+
+.nav a {
+    color: white;
+}
+
+.nav-items {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-items li ~ li {
+    margin-left: 40px;
+    list-style: none;
+}
+
+.nav-items  a {
+    color: #000000;
+    font-size: 24px;
+    font-family: "Poppins","sans-serif";
+    text-decoration: none;
+}
+
+.nav-btn-logout {
+    background: #F8F5F5;
+    border-radius: 20px;
+    padding: 12px 48px;
+    transition: 300ms;
+}
+
+
+/*.nav-container{
     height: 75px;
     margin-top: -66px;
     position: relative;
@@ -81,15 +135,15 @@ nav .logo {
     font-size: 24px;
     font-family: "Poppins","sans-serif";
     text-decoration: none;
-}
+}*/
 
 /* Search Box*/
 
 .search-box {
-    width: 1100px;
-    margin: 0 auto;
+    width: calc(100vw - 250px);
+    margin:auto;
     text-align: right;
-    position:relative;
+    position: fixed;
     top: 0;
     transition: 300ms;
     z-index: 3;
@@ -120,10 +174,12 @@ nav .logo {
 .nav-btn-container {
     display: flex;
     position: relative;
+    padding: 0 20px;
 }
 
 .nav-btn-container img {
     position: absolute;
+    top: -14px;
 }
 
 .nav-btn-container .close-btn{
@@ -164,6 +220,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 40px;
+    margin-top: 75px;
 }
 
 header h1 {

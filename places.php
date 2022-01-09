@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Style/places_style.css">
+    <link rel="stylesheet" href="Style/places_style.css" type="text/css">
     <script src="Scripts/Functions.js"></script>
     <script src="https://kit.fontawesome.com/f091d61524.js" crossorigin="anonymous"></script>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
     <div class="search-box" id="search-box">    
-        <input type="text" placeholder="Search here..." />
+        <input type="text" id="search" placeholder="Search here..." />
     </div>
 
     <div class="nav-container">
-        <div class="wrapper">
+        <div class="wrappern">
             <nav>
                 <div class="logo">
                     <a href="Home.php"><img src="Icons/logo.png" alt="Logo"></a>
@@ -35,12 +35,12 @@
                                 <img class="close-btn" src="Icons/close-icon.svg" alt="">
                             </a>
                         </li>
+                        <li>
+                            <a class="nav-btn-logout" href="logout.php">Logout</a>
+                        </li>
                     </ul>
             </nav>
         </div>
-            <div class="logout">
-                <a class="nav-btn-logout" href="logout.php">Logout</a>
-            </div>
     </div>
 
     <div class="header-container">
@@ -101,8 +101,9 @@
                         ";
                                       
                     }
-
-                
+                ?>
+                <div class="cards">
+                <?php
                 /*
                     echo"
                     <form id='myForm' method='POST'>
@@ -112,28 +113,23 @@
                                         </form>
                                         <br/>
                                         <div id='results'>
-
                                         <!-- All data will display here  -->
                                         </div>
                     
                     
                     ";
                 */ 
-
                     while($row = mysqli_fetch_assoc($result)) 
                     {
                         echo"
                         <div class='container' style='
                         background-color:lightgray; 
                         float: left;
-                        width: 320px; heigth: 550px; border-radius:40px; margin: 33px 36px;'>
-
-
+                        width: 320px; heigth: 450px; border-radius:30px; margin: 33px 36px;'>
                             <div class='container-content' style='padding: 0px;
                             text-align: center; '>
-
                             <img src='$row[img_url]' style='width: 100%;
-                            height: 300px; border-radius:30px 30px 0px 0px;'>
+                            height: 200px; border-radius:30px 30px 0px 0px;'>
                             
                             <form id='myForm' method='POST'>
                             ";
@@ -153,27 +149,26 @@
                             }
                             echo "
                             </form>
-
                             
                             <img src='Icons/location.png' style='float:left; margin: 16px 0 0 16px; width: 30px; heigth: 30px;'>
                             <h2>$row[naziv]</h2>
-
                             <p>For more information click <a href=$row[hylink] target='_blank'>here</a></p>
-
                             </div>
                         </div>";
                     }
-                
                 ?>
+            </div>
+
             
-            <div class="logoIkone">
-            <a class="Logo_d"href="#"><img src="Icons/logo.png" alt="Logo"></a>
+            <div class="logob">
+                <a href="Home.php"><img src="Icons/logo.png" alt="Logo"></a>
+            </div>
+            
 
             <div class="social-icons">
                 <a href="#"><img src="Icons/facebook-logo.png" alt="Facebook"></a>
                 <a href="#"><img src="Icons/Instagram-logo.png" alt="Instagram"></a>
                 <a href="#"><img src="Icons/gmail-logo.png" alt="Gmail"></a>
-            </div>
             </div>
         </div>   
     </div>

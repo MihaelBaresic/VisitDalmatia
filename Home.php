@@ -10,11 +10,11 @@ include "session.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
     <script src="Scripts/Functions.js"></script>
-    <link rel="stylesheet" href="Style/home_style.css">
+    <link rel="stylesheet" href="Style/home_style.css" type="text/css">
 </head>
 <body>
     <div class="nav-container">
-        <div class="wrapper">
+        <div class="wrappern">
             <nav>
                 <div class="logo">
                     <a href="#"><img src="Icons/logo.png" alt="Logo"></a>
@@ -142,6 +142,3 @@ include "session.php";
     <footer>©VISIT DALMATIA All Rights Reserved</footer>
 </body>
 </html>
-
-
-

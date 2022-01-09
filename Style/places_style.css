@@ -219,12 +219,12 @@ header .intro-image img {
 /* Social Icons */
 
 .logob{
-    margin-top: 30px;
+    margin: 30 auto;
 }
 
 .social-icons {
-    margin-top: 40px;
-    margin-bottom: 50px;
+    margin:40;
+    display: block;
 }
 
 .social-icons a {

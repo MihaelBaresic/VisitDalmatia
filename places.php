@@ -170,6 +170,7 @@
                 <a href="#"><img src="Icons/Instagram-logo.png" alt="Instagram"></a>
                 <a href="#"><img src="Icons/gmail-logo.png" alt="Gmail"></a>
             </div>
+            
         </div>   
     </div>
     <footer>©VISIT DALMATIA All Rights Reserved</footer>

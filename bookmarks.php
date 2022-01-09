@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="nav-container">
-        <div class="wrapper">
+        <div class="wrappern">
             <nav>
                 <div class="logo">
                     <a href="Home.php"><img src="Icons/logo.png" alt="Logo"></a>

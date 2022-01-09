@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Style/places_style.css">
+    <link rel="stylesheet" href="Style/places_style.css" type="text/css">
     <script src="Scripts/Functions.js"></script>
     <script src="https://kit.fontawesome.com/f091d61524.js" crossorigin="anonymous"></script>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
@@ -16,7 +16,7 @@
     </div>
 
     <div class="nav-container">
-        <div class="wrapper">
+        <div class="wrappern">
             <nav>
                 <div class="logo">
                     <a href="Home.php"><img src="Icons/logo.png" alt="Logo"></a>
@@ -35,12 +35,12 @@
                                 <img class="close-btn" src="Icons/close-icon.svg" alt="">
                             </a>
                         </li>
+                        <li>
+                            <a class="nav-btn-logout" href="logout.php">Logout</a>
+                        </li>
                     </ul>
             </nav>
         </div>
-            <div class="logout">
-                <a class="nav-btn-logout" href="logout.php">Logout</a>
-            </div>
     </div>
 
     <div class="header-container">
@@ -98,12 +98,12 @@
                         <h2 class='exp'>
                             Explore Top Destination
                         </h2>
-                        <div class='cards'>
                         ";
                                       
                     }
-
-                
+                ?>
+                <div class="cards">
+                <?php
                 /*
                     echo"
                     <form id='myForm' method='POST'>
@@ -120,7 +120,6 @@
                     
                     ";
                 */ 
-
                     while($row = mysqli_fetch_assoc($result)) 
                     {
                         echo"
@@ -164,11 +163,14 @@
                             </div>
                         </div>";
                     }
-                
                 ?>
+            </div>
+
             
-                </div>
-            <a class="Logo_d"href="#"><img src="Icons/logo.png" alt="Logo"></a>
+            <div class="logob">
+                <a href="Home.php"><img src="Icons/logo.png" alt="Logo"></a>
+            </div>
+            
 
             <div class="social-icons">
                 <a href="#"><img src="Icons/facebook-logo.png" alt="Facebook"></a>

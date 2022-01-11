@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Style/places_style.css" type="text/css">
+    <link rel="stylesheet" href="Style/font-awesome.min.css" type="text/css">
     <script src="Scripts/Functions.js"></script>
     <script src="https://kit.fontawesome.com/f091d61524.js" crossorigin="anonymous"></script>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
@@ -89,13 +90,13 @@
                                  </p>
                 
                             <h1>$county_name</h1>
-                            <p>$rownew[tekst]<p>
+                            <p style='margin-bottom:20px;'>$rownew[tekst]<p>
                             </div>
                         <div class='intro-image' style='width:200px; height:200px; margin-bottom:50px;'>
                             <img src='$rownew[grb]' alt='grb'>
                         </div>
                         </header>
-                        <h2 class='exp'>
+                        <h2 class='exp' style='margin:40px 0;'>
                             Explore Top Destination
                         </h2>
                         ";
@@ -125,7 +126,7 @@
                         <div class='container' style='
                         background-color:lightgray; 
                         float: left;
-                        width: 320px; height: 300px; border-radius:30px; margin: 33px 40px;'>
+                        width: 320px; height: 400px; border-radius:30px; margin: 33px 40px;'>
                             <div class='container-content' style='padding: 0px;
                             text-align: center; '>
                             <img src='$row[img_url]' style='width: 100%;
@@ -150,9 +151,16 @@
                             echo "
                             </form>
                             
-                            <img src='Icons/location.png' style='float:left; margin: 16px 0 0 16px; width: 30px; heigth: 30px;'>
-                            <h2>$row[naziv]</h2>
-                            <p>For more information click <a href=$row[hylink] target='_blank'>here</a></p>
+                            
+                            <h2><img src='Icons/location.png' style='float:center; width: 30px; heigth: 30px;'> $row[naziv]</h2>
+                            <p style='font-size:17px; padding-top:10px;'>For more information click <a href=$row[hylink] target='_blank'>here</a></p>
+                            <div class='stars' style='font-size:22px; margin:20px 0; cursor:pointer;'>
+                            <i class='star-icon fa fa-star-o' aria-hidden'true'></i>
+                            <i class='star-icon fa fa-star-o' aria-hidden'true'></i>
+                            <i class='star-icon fa fa-star-o' aria-hidden'true'></i>
+                            <i class='star-icon fa fa-star-o' aria-hidden'true'></i>
+                            <i class='star-icon fa fa-star-o' aria-hidden'true'></i>
+                            </div>
                             </div>
                         </div>";
                     }

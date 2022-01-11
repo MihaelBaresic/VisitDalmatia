@@ -153,7 +153,7 @@
                             
                             
                             <h2><img src='Icons/location.png' style='float:center; width: 30px; heigth: 30px;'> $row[naziv]</h2>
-                            <p style='font-size:17px; padding-top:10px;'>For more information click <a href=$row[hylink] target='_blank'>here</a></p>
+                            <p style='font-size:17px; padding-top:10px;'>For more information click <a href=$row[hylink] target='_blank' style='text-decoration:none;'>here</a></p>
                             <div class='stars' style='font-size:22px; margin:20px 0; cursor:pointer;'>
                             <i class='star-icon fa fa-star-o' aria-hidden'true'></i>
                             <i class='star-icon fa fa-star-o' aria-hidden'true'></i>
@@ -166,21 +166,24 @@
                     }
                 ?>
             </div>
-
             
-            <div class="logob">
+        
+            
+            
+        </div>   
+    </div>
+    
+    <div class="logob" style="padding-left:170px;">
                 <a href="Home.php"><img src="Icons/logo.png" alt="Logo"></a>
             </div>
             
 
-            <div class="social-icons">
+            <div class="social-icons" style="padding-left:150px;">
                 <a href="#"><img src="Icons/facebook-logo.png" alt="Facebook"></a>
                 <a href="#"><img src="Icons/Instagram-logo.png" alt="Instagram"></a>
                 <a href="#"><img src="Icons/gmail-logo.png" alt="Gmail"></a>
             </div>
-            
-        </div>   
-    </div>
+    
     <footer>©VISIT DALMATIA All Rights Reserved</footer>
     <script src="Scripts/searchbar.js"></script>
 </body>

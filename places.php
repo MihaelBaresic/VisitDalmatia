@@ -126,7 +126,7 @@
                         <div class='container' style='
                         background-color:lightgray; 
                         float: left;
-                        width: 320px; height: 400px; border-radius:30px; margin: 33px 40px;'>
+                        width: 320px; height: 350px; border-radius:30px; margin: 33px 40px;'>
                             <div class='container-content' style='padding: 0px;
                             text-align: center; '>
                             <img src='$row[img_url]' style='width: 100%;

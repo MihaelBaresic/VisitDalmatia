@@ -154,13 +154,7 @@
                             
                             <h2><img src='Icons/location.png' style='float:center; width: 30px; heigth: 30px;'> $row[naziv]</h2>
                             <p style='font-size:17px; padding-top:10px;'>For more information click <a href=$row[hylink] target='_blank' style='text-decoration:none;'>here</a></p>
-                            <div class='stars' style='font-size:22px; margin:20px 0; cursor:pointer;'>
-                            <i class='star-icon fa fa-star-o' aria-hidden'true'></i>
-                            <i class='star-icon fa fa-star-o' aria-hidden'true'></i>
-                            <i class='star-icon fa fa-star-o' aria-hidden'true'></i>
-                            <i class='star-icon fa fa-star-o' aria-hidden'true'></i>
-                            <i class='star-icon fa fa-star-o' aria-hidden'true'></i>
-                            </div>
+                           
                             </div>
                         </div>";
                     }
